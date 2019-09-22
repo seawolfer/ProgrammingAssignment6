@@ -11,7 +11,7 @@ unzip(zipfile = "dataFiles.zip")
 NEI <- data.table::as.data.table(x = readRDS("summarySCC_PM25.rds"))
 SCC <- data.table::as.data.table(x = readRDS("Source_Classification_Code.rds"))
 
-# Gather the subset of the NEI data which corresponds to vehicles
+# Subset of the NEI data correponding to vehicles
 vehiclesSCC <- SCC[grepl("vehicle", SCC$SCC.Level.Two, ignore.case=TRUE)
                    , SCC]
 vehiclesNEI <- NEI[NEI[, SCC] %in% vehiclesSCC,]
