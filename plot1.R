@@ -15,4 +15,4 @@ totalNEI <- NEI[, lapply(.SD, sum, na.rm = TRUE), .SDcols = c("Emissions"), by =
 barplot(totalNEI[, Emissions]
         , names = totalNEI[, year]
         , xlab = "Years", ylab = "Emissions"
-        , main = "Emissions over the Years")
+        , main = "Emissions over the Years") 

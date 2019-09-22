@@ -24,4 +24,4 @@ ggplot(combustionNEI,aes(x = factor(year),y = Emissions/10^5)) +
   labs(x="year", y=expression("Total PM"[2.5]*" Emission (10^5 Tons)")) + 
   labs(title=expression("PM"[2.5]*" Coal Combustion Source Emissions Across US from 1999-2008"))
 
-dev.off()
+dev.off() 

@@ -19,4 +19,4 @@ barplot(totalNEI[, Emissions]
         , xlab = "Years", ylab = "Emissions"
         , main = "Emissions over the Years")
 
-dev.off()
+dev.off() 
